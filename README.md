@@ -8,7 +8,7 @@ TCP/UDP client and server applications
 выбор протокола задаётся параметром командной строки,
 как и адрес сервера и номер порта:
 
-client-app-name <host-address> <port> <tcp|udp>
+client-app-name host-address port tcp|udp
   
 При вводе в консоли "QUIT" сообщение не отправляется
 и происходит выход из приложения.
@@ -31,7 +31,7 @@ client-app-name <host-address> <port> <tcp|udp>
 сокетов, открытых в неблокирующем режиме + функция select()
 для сокетов, работающих через соединение (TCP):
   
-server-app-name <port-udp> <port-tcp>
+server-app-name port-udp port-tcp
   
 Длина сообщений - не более 1024 символа (иначе оно усекается
 до этой длины).
