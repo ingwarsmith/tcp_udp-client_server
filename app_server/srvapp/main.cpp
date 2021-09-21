@@ -68,6 +68,7 @@ std::string processedMessage(std::string in_message)
     while (std::getline(fst, s, ' '))
     {
         auto ok_number = true;
+        if (s.empty()) continue;
         auto sz = s.size();
         if (s[0] == '-') s.erase(s.begin()); // минус впереди
         if (s[sz-1] == '.' || s[sz-1] == ',') s.erase(sz-1); // точка или запятая в конце
